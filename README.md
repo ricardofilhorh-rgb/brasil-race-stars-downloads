@@ -1,37 +1,45 @@
-# Brasil Race Stars — downloads
+# Brasil Race Stars — jogar e baixar
 
-Jogo de kart arcade brasileiro. Esta página só tem os **instaladores** e as instruções. O código do jogo não está aqui.
+Kart arcade brasileiro. Versão **0.9.4, candidata com a atualização R9**. O estado dos testes e as limitações desta entrega estão nas notas da versão.
 
-> Versão candidata **0.9.1**. Para jogar online, todos precisam da **mesma versão** (aparece no painel ONLINE).
-> Confira os arquivos pelo `SHA256SUMS-0.9.1.txt` da página de Releases.
-
-## Baixar
-
-Abra a aba **Releases** (à direita) e baixe o arquivo do seu aparelho:
-
-| Aparelho | Arquivo |
+| Link | O que abre ou instala |
 |---|---|
-| Computador Windows 10/11 (64 bits) | `BrasilRaceStars-0.9.1-Windows-Instalador.exe` |
-| Celular / TV box Android | `BrasilRaceStars-0.9.1-movel.apk` (quando publicado) |
-| Meta Quest 2 / 3 / 3S | `BrasilRaceStars-0.9.1-quest.apk` (quando publicado) |
+| [Instalar no Windows — 0.9.4 / R9](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v0.9.4/BrasilRaceStars-0.9.4-Windows-Instalador.exe) | Instala ou atualiza o jogo completo no Windows 10/11 de 64 bits. R9 incluída; corrida normal com oito pilotos concluída no build. Download de 921 MB. |
+| [Notas da versão 0.9.4 e integridade dos arquivos](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/tag/v0.9.4) | Veja os arquivos publicados, correções, testes realizados e pendências. |
 
-## Windows
-1. Abra o instalador. Se aparecer "O Windows protegeu o computador", clique em **Mais informações → Executar assim mesmo** (o instalador ainda não tem certificado pago).
-2. Siga as telas; o jogo fica no Menu Iniciar (e na Área de Trabalho, se marcar).
-3. **Atualizar** = rodar o instalador da versão nova. Saves e configurações são mantidos.
-4. **Desinstalar** = Configurações → Aplicativos → Brasil Race Stars. Os saves continuam guardados.
+**Web:** publicação em andamento; o endereço será acrescentado após a conferência dos arquivos e o teste no navegador.
 
-## Android (celular e TV box)
-1. Baixe o APK no aparelho e abra. Permita "instalar apps desta fonte" quando o Android pedir.
-2. Celular: controles na tela. TV box: use um controle Bluetooth ou USB.
+## Jogar pelo navegador
 
-## Meta Quest 2 / 3 / 3S
-1. Ative o **Modo Desenvolvedor** no app Meta Horizon do celular.
-2. Ligue o Quest no PC e instale o APK com o SideQuest (ou `adb install`).
-3. Gatilho direito acelera, esquerdo freia, analógico esquerdo dirige, grip ou gesto de arremesso solta o item, B troca a câmera.
+Abra o link Web e aguarde o carregamento. Escolha **Jogar sozinho**, **Jogar online** ou **Juntos neste aparelho**. O pacote inclui o menu, os pilotos, 20 pistas e seis arenas; não é uma transmissão por Parsec. A primeira carga é grande e depende da conexão e da memória disponível.
 
-## Jogar online
-1. Um jogador abre **ONLINE → CRIAR SALA** e envia o código (botão COMPARTILHAR).
-2. Os outros entram em **ONLINE → ENTRAR NA SALA** com o código.
-3. Todos marcam **ESTOU PRONTO**; quem criou a sala toca em **COMEÇAR CORRIDA**. Vagas livres viram pilotos de IA (até 8 no total).
-4. No fim, **VOLTAR À SALA** para correr de novo.
+## Jogar com amigos
+
+1. Todos usam a versão 0.9.4. Quem cria a sala escolhe pista, modo, voltas e regras.
+2. Envie o convite da sala. O amigo abre o link, entra e escolhe seu piloto; as regras do anfitrião aparecem no painel.
+3. Todos marcam **Estou pronto**. O anfitrião inicia a corrida. O limite é de oito pilotos, contando jogadores e as vagas preenchidas pela IA; a Arena Atlântida está limitada a seis nesta versão.
+
+Web é uma forma de abrir o jogo. Online por salas é uma opção dentro dele; Parsec é separado. Dois clientes foram testados juntos; oito clientes de rede e controles físicos USB/Bluetooth ainda exigem prova.
+
+## Instalar ou atualizar
+
+- **Windows:** baixe o instalador `.exe` e siga o assistente. A atualização usa o mesmo aplicativo e preserva os dados do jogador.
+- **Android:** o APK móvel é para Android 7 ou posterior, em aparelhos ARM compatíveis. Celular usa controles na tela; TV/TV box requer Android compatível e controle. Não é um instalador universal para qualquer Smart TV.
+- **Quest:** o APK específico é para Meta Quest, instalado por SideQuest/ADB. Não substitua pelo APK móvel.
+- Os arquivos de integridade da versão permitem conferir o SHA-256 de cada instalador.
+
+Não há instaladores nativos de iOS, macOS ou Linux nesta entrega. O acesso Web nesses sistemas depende da compatibilidade do navegador e ainda exige teste no aparelho.
+
+## CDs digitais do Ricardo
+
+- [Músicas cristãs — 37 faixas](https://musicas-cristas-ricardo.netlify.app/): abre o catálogo cristão. Para adicionar ao celular, use a opção de instalação/adicionar à tela inicial do navegador. O ícone é a capa com escadaria, nuvens e luz.
+- [Criatividade / músicas variadas — 16 faixas](https://musicas-variadas-ricardo.netlify.app/): abre o catálogo variado. A instalação pelo navegador usa a capa com retrato de regata e boné, de braços abertos.
+
+As quantidades acima são as exibidas nos catálogos conferidos. Existe outro atalho cristão no celular cuja edição ainda não foi comparada; não está confirmado que tenha mais músicas. Instalação nova e reprodução offline de todas as faixas não foram validadas nesta entrega.
+
+## Plataformas ainda em atualização para R9
+
+Android e Meta Quest 0.9.4 ainda não foram publicados. Os downloads abaixo são a versão **anterior 0.9.3**, sem a R9 desta entrega. Não os confunda com o instalador Windows 0.9.4.
+
+- [Android 0.9.3 anterior](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v0.9.3/BrasilRaceStars-0.9.3-movel.apk): celular, tablet e TV/TV box Android ARM compatível.
+- [Meta Quest 0.9.3 anterior](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v0.9.3/BrasilRaceStars-0.9.3-quest.apk): APK próprio do headset, instalado pelo SideQuest/ADB.
