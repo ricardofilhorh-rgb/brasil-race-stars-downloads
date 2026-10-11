@@ -15,7 +15,7 @@ Abra o link Web e aguarde o carregamento. Escolha **Jogar sozinho**, **Jogar onl
 ## Jogar com amigos
 
 1. Todos usam a versão 0.9.4. Quem cria a sala escolhe pista, modo, voltas e regras.
-2. Envie o convite da sala. O amigo abre o link, entra e escolhe seu piloto; as regras do anfitrião aparecem no painel.
+2. Envie o convite da sala. O amigo abre o link, aguarda o jogo carregar e clica em **Entrar na sala** com o código preenchido. Também pode abrir **Jogar online** e digitar o código de seis caracteres. Depois escolhe seu piloto; as regras do anfitrião aparecem no painel.
 3. Todos marcam **Estou pronto**. O anfitrião inicia a corrida. O limite é de oito pilotos, contando jogadores e as vagas preenchidas pela IA; a Arena Atlântida está limitada a seis nesta versão.
 
 Web é uma forma de abrir o jogo. Online por salas é uma opção dentro dele; Parsec é separado. Dois clientes foram testados juntos; oito clientes de rede e controles físicos USB/Bluetooth ainda exigem prova.
