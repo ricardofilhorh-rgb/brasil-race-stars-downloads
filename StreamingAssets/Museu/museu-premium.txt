@@ -1,0 +1,51 @@
+# Museu dos Lendarios premium (Claude 28/09). Lido pelo jogo ao abrir a pista; mudar aqui NAO precisa recompilar.
+# 1 = liga, 0 = desliga.
+esconder_ativo=1
+piso=1
+alas=1
+desfile=1
+gala=1
+testar_tecto=1
+# [28/09 m1] alas por DENTRO da volta (o esquerdo estava vago), pit rente, ceu de gala, menos luz (chao estourava)
+ala_lado=dentro
+escrita_lado=dentro
+escrita_largura=30
+pit_rente=1
+ceu_de_gala=1
+holofotes=18
+holofote_alfa=0.10
+brilho_altura=95
+brilho_maximo=1400
+luz_ambiente=0.62
+luz_sol=0.75
+# segundos depois de a pista abrir antes de montar (as outras camadas do Museu acabam ~10 s)
+espera_camadas=10.8
+# alas por atleta: distancia da berma (m) e folga minima a qualquer ponto da rota
+ala_distancia=15
+ala_folga=7.5
+# desfile digital dos pilotos na parede externa
+desfile_distancia=30
+desfile_altura=7.5
+desfile_cartao=6.2
+desfile_espaco=9
+desfile_velocidade=1.6
+desfile_folga=14
+desfile_maximo=420
+# escritas no piso externo
+escrita_passo=140
+escrita_distancia=13
+# --- o que destoa (nome exato, prefixo, ou nome que contem) ---
+esconder-prefixo=M3 Authored Gallery 
+esconder=Galeria dos Lendarios
+esconder=Museum Balcony Audience - Living Legends Crowd
+# sonda m0 (28/09): paredes pretas = paineis de vidro azul-escuro de 55-60 m (Salao + copias da Ambiencia)
+esconder-contem=Painel de Vidro
+# ceu escuro: cupula de vidro de 1 km (Ricardo gostou do azul "que parece um ceu")
+esconder=Cupula de Vidro
+# paredes pretas atras dos estandartes da Familia Vilela (as alas novas substituem)
+esconder=Parede Preta do Estandarte
+# linhas no ceu = costelas e nervuras do tecto do Salao (sem a cupula ficavam soltas)
+esconder-prefixo=Costela do Tecto
+esconder-prefixo=Nervura
+# sonda m2: coisas flutuando = copias de pecas de arquibancada redistribuidas no ar (placas de nome a 19 m, abas, bandeiroes, galeria a 31 m)
+esconder-prefixo=Claude Copia

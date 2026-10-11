@@ -1,0 +1,20 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; background: #09152d; color: #f6f8ff; }
+body { margin: 0; background: radial-gradient(ellipse at 50% 40%, #183d69, #09152d 75%); }
+#unity-container.unity-desktop { width: min(calc(100vw - 24px), calc((100dvh - 80px) * 16 / 9)); }
+#unity-container.unity-desktop #unity-canvas { width: 100% !important; height: auto !important; aspect-ratio: 16/9; border-radius: 8px; box-shadow: 0 12px 50px #0007; }
+#unity-canvas:focus-visible { outline: 2px solid #ffd936; outline-offset: 3px; }
+#unity-container #unity-canvas:fullscreen { width: 100vw !important; height: 100vh !important; border-radius: 0; }
+#unity-loading-bar { width: min(360px, 80vw); text-align: center; }
+#unity-logo { width: 148px; height: 148px; margin: 0 auto 18px; background: url('brs-icon.png') center / contain no-repeat; }
+#unity-progress-bar-empty { width: 100%; height: 7px; margin: 0; background: #ffffff26; border-radius: 6px; overflow: hidden; }
+#unity-progress-bar-full { height: 100%; margin: 0; background: linear-gradient(90deg, #34c987, #ffd936); border-radius: 6px; }
+#brs-load-status { margin: 16px 0 8px; font-weight: 700; }
+#brs-load-help { margin: 0; font-size: 13px; line-height: 1.5; color: #ced9e9; }
+#unity-footer { display: flex; align-items: center; gap: 12px; height: 46px; }
+#unity-webgl-logo { display: none; }
+#unity-build-title { font: 600 13px system-ui, sans-serif; color: #d7e1ef; margin: 0; order: -1; flex: 1; }
+#unity-fullscreen-button { border: 1px solid #526786; border-radius: 6px; color: #fff; background: #162d4d; width: auto; height: 32px; padding: 0 12px; cursor: pointer; font: 600 12px system-ui, sans-serif; }
+#unity-fullscreen-button:hover { background: #254569; }
+#unity-fullscreen-button:focus-visible { outline: 2px solid #ffd936; outline-offset: 2px; }
+#unity-warning { width: min(600px, 85%); max-height: 40vh; overflow: auto; font: 14px/1.5 system-ui, sans-serif; z-index: 5; border-radius: 8px; }
+@media (max-width: 600px) { #unity-container.unity-desktop { width: 100vw; } #unity-footer { padding: 0 8px; } }
