@@ -4,10 +4,9 @@ Kart arcade brasileiro. Versão **0.9.4, candidata com a atualização R9**. O e
 
 | Link | O que abre ou instala |
 |---|---|
+| [Jogar no navegador — 0.9.4 / R9](https://ricardofilhorh-rgb.github.io/brasil-race-stars-downloads/) | Abre o jogo completo na página: solo, online por sala e jogo local. 20 pistas e seis arenas. Primeira carga de até 964 MB; prefira computador com navegador atualizado. |
 | [Instalar no Windows — 0.9.4 / R9](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v0.9.4/BrasilRaceStars-0.9.4-Windows-Instalador.exe) | Instala ou atualiza o jogo completo no Windows 10/11 de 64 bits. R9 incluída; corrida normal com oito pilotos concluída no build. Download de 921 MB. |
 | [Notas da versão 0.9.4 e integridade dos arquivos](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/tag/v0.9.4) | Veja os arquivos publicados, correções, testes realizados e pendências. |
-
-**Web:** publicação em andamento; o endereço será acrescentado após a conferência dos arquivos e o teste no navegador.
 
 ## Jogar pelo navegador
 
@@ -39,7 +38,13 @@ As quantidades acima são as exibidas nos catálogos conferidos. Existe outro at
 
 ## Plataformas ainda em atualização para R9
 
-Android e Meta Quest 0.9.4 ainda não foram publicados. Os downloads abaixo são a versão **anterior 0.9.3**, sem a R9 desta entrega. Não os confunda com o instalador Windows 0.9.4.
+Os downloads abaixo são a versão **anterior 0.9.3**, sem a R9 desta entrega. Os respectivos APKs 0.9.4 ainda não foram publicados.
 
-- [Android 0.9.3 anterior](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v0.9.3/BrasilRaceStars-0.9.3-movel.apk): celular, tablet e TV/TV box Android ARM compatível.
-- [Meta Quest 0.9.3 anterior](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v0.9.3/BrasilRaceStars-0.9.3-quest.apk): APK próprio do headset, instalado pelo SideQuest/ADB.
+- [Android 0.9.3 anterior](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v0.9.3/BrasilRaceStars-0.9.3-movel.apk): Celular, tablet e TV/TV box Android ARM compatível, Android 7 ou posterior. TV requer controle.
+- [Meta Quest 0.9.3 anterior](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v0.9.3/BrasilRaceStars-0.9.3-quest.apk): APK específico do headset, para instalar pelo SideQuest/ADB.
+
+## Teste realizado pelo endereço público
+
+Solo e corrida online com dois clientes do site, Pelé e Neymar, mais seis IA, com largada e movimento por teclado. Também foi conferida a alteração de regras do anfitrião no painel do convidado. O teste não cobre oito clientes de rede, todos os ciclos dos modos ou controles físicos USB/Bluetooth.
+
+![Corrida online pela Web pública, versão 0.9.4](media/web-r9-online.png)
