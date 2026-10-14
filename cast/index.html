@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Brasil Race Stars</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  [RICARDO 14/10] Cast "como o YouTube": funciona em praticamente todo aparelho com Cast (Chromecast, Mi Box antiga,
+  TV com Chromecast embutido, Google TV). O jogo RODA NO CELULAR; o celular manda a imagem do jogo em video (WebRTC,
+  rede local, H.264 por hardware) e esta pagina so a mostra em tela cheia. A TV nao precisa de GPU para jogos.
+
+  Sinalizacao: canal proprio do Cast `urn:x-cast:com.brasilracestars.video`, mensagens JSON:
+    celular -> TV : {tipo:"oferta", sdp}  {tipo:"ice", candidato}  {tipo:"fim"}
+    TV -> celular : {tipo:"resposta", sdp} {tipo:"ice", candidato} {tipo:"pronta"} {tipo:"estado", texto}
+  App ID 73912BB2 (Google Cast SDK Developer Console). Hospedada no GitHub Pages (HTTPS e obrigatorio).
+-->
+<script src="https://www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  video { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; }
+  #espera { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            color: #fff; font: 600 4.2vh/1.3 system-ui, sans-serif; text-align: center;
+            background: radial-gradient(circle at 50% 40%, #0b4f2a 0%, #041a10 55%, #000 100%); transition: opacity .6s; }
+  #espera b { font-size: 9vh; letter-spacing: .04em; color: #ffd400; text-shadow: 0 .5vh 2vh #000; }
+  #espera small { margin-top: 3vh; font-weight: 400; color: #bfe8cf; }
+  #espera.oculto { opacity: 0; pointer-events: none; }
+</style>
+</head>
+<body>
+<video id="video" autoplay playsinline></video>
+<div id="espera"><b>BRASIL RACE STARS</b><span id="texto">Conectando ao celular…</span><small>O jogo roda no celular e aparece aqui.</small></div>
+<script>
+  const CANAL = 'urn:x-cast:com.brasilracestars.video';
+  const video = document.getElementById('video');
+  const espera = document.getElementById('espera');
+  const texto = document.getElementById('texto');
+  const ctx = cast.framework.CastReceiverContext.getInstance();
+  let pc = null, remetente = null;
+
+  function enviar(msg) { if (remetente) ctx.sendCustomMessage(CANAL, remetente, msg); }
+  function aviso(t) { texto.textContent = t; enviar({ tipo: 'estado', texto: t }); }
+
+  function novaConexao() {
+    if (pc) pc.close();
+    // Mesma rede Wi-Fi: os candidatos locais bastam; o STUN e so reserva.
+    pc = new RTCPeerConnection({ iceServers: [{ urls: 'stun:stun.l.google.com:19302' }] });
+    pc.onicecandidate = e => { if (e.candidate) enviar({ tipo: 'ice', candidato: e.candidate.toJSON() }); };
+    pc.ontrack = e => {
+      // Atraso minimo: o jogo e interativo, nao um filme. Sem buffer de reproducao.
+      try { if ('jitterBufferTarget' in e.receiver) e.receiver.jitterBufferTarget = 0; } catch (_) {}
+      try { e.receiver.playoutDelayHint = 0; } catch (_) {}
+      if (!video.srcObject) video.srcObject = e.streams[0] || new MediaStream([e.track]);
+      video.play().catch(() => {});
+    };
+    pc.onconnectionstatechange = () => {
+      const s = pc.connectionState;
+      if (s === 'connected') { espera.classList.add('oculto'); enviar({ tipo: 'estado', texto: 'conectado' }); }
+      if (s === 'failed' || s === 'disconnected') { espera.classList.remove('oculto'); aviso('Conexão perdida. Tente transmitir de novo.'); }
+    };
+  }
+
+  ctx.addCustomMessageListener(CANAL, async ev => {
+    remetente = ev.senderId;
+    const m = typeof ev.data === 'string' ? JSON.parse(ev.data) : ev.data;
+    try {
+      if (m.tipo === 'oferta') {
+        novaConexao();
+        video.srcObject = null;
+        await pc.setRemoteDescription({ type: 'offer', sdp: m.sdp });
+        const resposta = await pc.createAnswer();
+        await pc.setLocalDescription(resposta);
+        enviar({ tipo: 'resposta', sdp: pc.localDescription.sdp });
+        aviso('Recebendo o jogo…');
+      } else if (m.tipo === 'ice' && pc && m.candidato) {
+        await pc.addIceCandidate(m.candidato);
+      } else if (m.tipo === 'fim') {
+        if (pc) pc.close(); pc = null; video.srcObject = null;
+        espera.classList.remove('oculto'); aviso('Transmissão encerrada.');
+      }
+    } catch (err) { aviso('Erro: ' + err.message); }
+  });
+
+  ctx.addEventListener(cast.framework.system.EventType.SENDER_CONNECTED, e => { remetente = e.senderId; enviar({ tipo: 'pronta' }); });
+  ctx.addEventListener(cast.framework.system.EventType.SENDER_DISCONNECTED, () => {
+    if (ctx.getSenders().length === 0) ctx.stop();
+  });
+
+  const opcoes = new cast.framework.CastReceiverOptions();
+  opcoes.disableIdleTimeout = true;          // sem "media" do Cast a tocar, a TV fecharia a pagina sozinha
+  opcoes.customNamespaces = { [CANAL]: cast.framework.system.MessageType.JSON };
+  opcoes.maxInactivity = 3600;
+  ctx.start(opcoes);
+</script>
+</body>
+</html>
