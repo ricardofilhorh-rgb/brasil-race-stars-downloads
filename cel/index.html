@@ -1,0 +1,12 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brasil Race Stars — Celular / TV box / projetor</title>
+<style>body{margin:0;background:#06142e;color:#fff;font:600 22px system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center}a{color:#ffd400}</style></head>
+<body><div><div style="font-size:40px;color:#ffd400">BRASIL RACE STARS</div><p>Baixando a versão mais recente para <b>Celular / TV box / projetor</b>…</p><p id="m"></p></div>
+<script>
+// Link curto -> esta pagina -> arquivo da versao MAIS RECENTE (nao muda nas proximas versoes).
+var reserva='https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/latest/download/BrasilRaceStars-0.9.8-movel.apk';
+function ir(u){document.getElementById('m').innerHTML='Se não começar, <a href="'+u+'">toque aqui</a>.';location.href=u;}
+fetch('https://api.github.com/repos/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/latest')
+ .then(function(r){return r.json()}).then(function(j){var a=(j.assets||[]).filter(function(x){return x.name.slice(-10)==='-movel.apk'})[0];ir(a?a.browser_download_url:reserva);})
+ .catch(function(){ir(reserva)});
+</script></body></html>
