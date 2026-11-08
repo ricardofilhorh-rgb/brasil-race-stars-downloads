@@ -1,16 +1,16 @@
 # Brasil Race Stars — instalar e jogar com amigos
 
-Os instaladores públicos atuais são da versão **1.0.1**, publicada em 25/10/2026. Windows, Android e Meta Quest usam a mesma versão para entrar juntos na sala online.
+Versão pública **1.0.2**, atualizada em **08/11/2026**, para Windows, Android e Meta Quest. Todos devem usar a mesma versão para entrar juntos na sala online.
 
-**As correções 1.0.2 ainda estão em desenvolvimento e teste. Não há instalador 1.0.2 publicado. A 1.0.1 pode apresentar os problemas de jogabilidade já relatados; os links abaixo não representam a conclusão dessas correções.**
+Cristiano Ronaldo, Messi e Maradona com cards premium, pilotos 3D, bandeirões, mosaicos e narração; Cristiano com “Siuuu!” e “Eu estou aqui!”. Inclui Bolsonaro novo, rostos melhorados e correções de malha para fechar furos em 86 pilotos.
 
-| Aparelho | Download 1.0.1 | Tamanho aproximado |
-|---|---|---|
-| PC Windows 64 bits | [Instalador Windows](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v1.0.1/BrasilRaceStars-1.0.1-Windows-Instalador.exe) | 1,82 GB |
-| Celular / tablet / TV box Android compatível | [APK Android](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v1.0.1/BrasilRaceStars-1.0.1-movel.apk) | 1,77 GB |
-| Meta Quest 2 / 3 / 3S | [APK Quest VR](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v1.0.1/BrasilRaceStars-1.0.1-quest.apk) | 1,68 GB |
+| Aparelho | Download 1.0.2 | Tamanho | Link curto |
+|---|---|---|---|
+| PC Windows 64 bits | [Instalador Windows](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v1.0.2/BrasilRaceStars-1.0.2-Windows-Instalador.exe?brs=1794135842327) | 1,63 GB | [brsjogopc](https://tinyurl.com/brsjogopc) |
+| Celular / tablet / TV box Android compatível | [APK Android](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v1.0.2/BrasilRaceStars-1.0.2-movel.apk?brs=1794135842333) | 1,71 GB | [brscel](https://tinyurl.com/brscel) |
+| Meta Quest 2 / 3 / 3S | [APK Quest VR](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v1.0.2/BrasilRaceStars-1.0.2-quest.apk?brs=1794135842332) | 1,62 GB | [brsquest](https://tinyurl.com/brsquest) |
 
-[Versão pública mais recente](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/latest) · [Notas da 1.0.1](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/tag/v1.0.1) · [SHA-256 dos arquivos](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v1.0.1/SHA256SUMS-1.0.1.txt)
+[Versão pública mais recente](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/latest) · [Notas da 1.0.2](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/tag/v1.0.2) · [SHA-256 dos arquivos](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/latest/download/SHA256SUMS.txt)
 
 ## Instalar ou atualizar
 
@@ -22,17 +22,17 @@ Não há instaladores nativos para iPhone/iPad, macOS ou Linux nesta entrega. O 
 
 ## Entrar na mesma sala online
 
-1. Todos conferem **1.0.1** no jogo. Instalações com versões diferentes não devem ser misturadas na sala.
+1. Todos conferem **1.0.2** no jogo. Instalações com versões diferentes não devem ser misturadas na sala.
 2. Um jogador abre **ONLINE → CRIAR SALA** e envia o código aos amigos.
 3. Os outros abrem **ONLINE → ENTRAR NA SALA**, digitam o código e escolhem o piloto.
 4. Todos marcam **ESTOU PRONTO**. O anfitrião inicia a partida.
 5. Ao terminar, use **VOLTAR À SALA** para organizar outra partida.
 
-Os links e as somas dos três instaladores foram conferidos em 27/10/2026, com acesso sem login. Isso verifica disponibilidade e integridade dos arquivos, não comprova que todos os problemas do jogo foram resolvidos.
+Os links públicos e os hashes SHA-256 dos três pacotes foram conferidos em 08/11/2026: intervalos baixados sem login coincidiram com os arquivos locais, e o SHA-256 completo registrado pelo GitHub corresponde ao de cada pacote. Essa verificação não equivale a teste completo de todos os modos e aparelhos.
 
 ## Versão Web anterior
 
-[Jogar no navegador](https://ricardofilhorh-rgb.github.io/brasil-race-stars-downloads/) é uma distribuição separada e anterior. A evidência histórica desta página é da versão 0.9.4/R9, com 20 pistas e seis arenas. Não a use como substituta dos instaladores 1.0.1 para formar a sala deste grupo. Não houve nova validação do jogo Web nesta atualização da documentação.
+[Jogar no navegador](https://ricardofilhorh-rgb.github.io/brasil-race-stars-downloads/) é uma distribuição separada e anterior. A evidência histórica desta página é da versão 0.9.4/R9, com 20 pistas e seis arenas. Não a use como substituta dos instaladores 1.0.2 para formar a sala deste grupo. Não houve nova validação do jogo Web nesta atualização da documentação.
 
 O teste histórico Web cobriu solo e dois clientes online, Pelé e Neymar, mais seis IA, com teclado e regras do anfitrião recebidas pelo convidado. Não comprova oito clientes de rede, todos os ciclos dos modos ou controles físicos USB/Bluetooth.
 
