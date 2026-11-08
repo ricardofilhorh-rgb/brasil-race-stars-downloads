@@ -10,7 +10,7 @@ Cristiano Ronaldo, Messi e Maradona com cards premium, pilotos 3D, bandeirões, 
 | Celular / tablet / TV box Android compatível | [APK Android](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v1.0.2/BrasilRaceStars-1.0.2-movel.apk?brs=1794135842333) | 1,71 GB | [brscel](https://tinyurl.com/brscel) |
 | Meta Quest 2 / 3 / 3S | [APK Quest VR](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v1.0.2/BrasilRaceStars-1.0.2-quest.apk?brs=1794135842332) | 1,62 GB | [brsquest](https://tinyurl.com/brsquest) |
 
-[Versão pública mais recente](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/latest) · [Notas da 1.0.2](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/tag/v1.0.2) · [SHA-256 dos arquivos](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/latest/download/SHA256SUMS.txt)
+[Versão pública mais recente](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/latest) · [Notas da 1.0.2](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/tag/v1.0.2) · [SHA-256 dos arquivos](https://github.com/ricardofilhorh-rgb/brasil-race-stars-downloads/releases/download/v1.0.2/SHA256SUMS.txt?brs=1794135998188)
 
 ## Instalar ou atualizar
 
